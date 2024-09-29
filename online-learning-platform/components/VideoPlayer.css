@@ -1,0 +1,52 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VideoPlayer container */
+.video-player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;       /* Limit the maximum width of the player */
+  margin: 20px auto;      /* Center the video player on the page */
+  padding: 10px;          /* Padding around the player */
+  background-color: #f9f9f9;  /* Light background color */
+  border-radius: 8px;     /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Video element styling */
+.video-player-container video {
+  width: 100%;            /* Full width of the container */
+  height: auto;           /* Maintain the aspect ratio */
+  border-radius: 8px;     /* Rounded corners for the video */
+  border: 2px solid #007bff;  /* Border around the video */
+}
+
+/* Video controls styling */
+.video-controls {
+  margin-top: 10px;       /* Space between video and controls */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.video-controls button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.video-controls button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}

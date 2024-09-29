@@ -1,0 +1,99 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto;    /* Center the container */
+  padding: 20px;     /* Add padding inside the container */
+}
+
+/* Heading styles */
+h2 {
+  font-size: 2rem;        /* Font size for the heading */
+  color: #333;            /* Dark gray color for the text */
+  text-align: center;     /* Center the heading */
+}
+
+/* Card styles */
+.row {
+  display: flex;          /* Use flexbox for the row */
+  flex-wrap: wrap;       /* Allow wrapping to next line */
+  justify-content: space-between; /* Space between cards */
+}
+
+.course-card {
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px;     /* Rounded corners */
+  overflow: hidden;        /* Prevent overflow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and shadow */
+  width: 350px;           /* Set fixed width for each card */
+  margin-bottom: 20px;    /* Space between rows */
+  display: flex;          /* Make the card a flex container */
+  flex-direction: column; /* Stack children vertically */
+}
+
+/* Card hover effect */
+.course-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Image styles */
+.card-img-top {
+  width: 100%;            /* Full width of the card */
+  height: 100px;          /* Set a fixed height for images */
+  object-fit: cover;      /* Maintain aspect ratio and cover the area */
+}
+
+/* Card body styles */
+.card-body {
+  padding: 15px;         /* Padding inside card body */
+  flex-grow: 1;          /* Allow the body to grow and fill space */
+  display: flex;         /* Make the card body a flex container */
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: space-between; /* Space out text evenly */
+}
+
+.card-title {
+  font-size: 1.25rem;    /* Font size for course title */
+  margin-bottom: 10px;   /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem;       /* Font size for instructor text */
+  color: #555;           /* Gray color for instructor text */
+  margin-bottom: auto;   /* Allow bottom margin to push content upwards */
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff; /* Primary button color */
+  color: white;               /* White text */
+  border: none;               /* No border */
+  padding: 10px 15px;        /* Padding for the button */
+  border-radius: 5px;        /* Rounded corners */
+  text-decoration: none;      /* Remove underline */
+  transition: background-color 0.3s; /* Smooth transition for button */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .course-card {
+    width: calc(50% - 20px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .course-card {
+    width: 100%; /* Full width on extra small screens */
+  }
+}
